@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sweet House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <header>
+        <h1>Sweet House</h1>
+        <h2>Contactez-nous</h2>
+        <p>Contactez-nous pour vos commandes et pour toute information complémentaire.</p>
+    </header>
+    <nav>
+        <a  href="index.html">Accueil</a> <br>
+        <a  href="tranches.html">tranches de pâtisserie</a> <br>
+        <a  href="boulangerie.html">Boulangerie</a> <br>
+        <a  href="viennoiserie.html">Viennoiserie</a><br>
+        <a  href="mariage.html">Gâteux de mariage</a> <br>
+        <a  href="anniversaire.html">Gâteux d'anniversaire</a><br>
+        <a  href="contact.html">Contact</a>
+    </nav>
+</div>
+    <main>
+        <h2>Contactez-nous</h2>
+        <p>Vous souhaitez passer une commande ou demander un devis ? Contactez Sweet House pour plus d'informations.</p>
+        <h2>Vos informations</h2>
+
+        <form action="#" method="post">
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <br><br>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <br><br>
+
+            <h2>Votre commande</h2>
+
+            <label for="produit">Choisissez un produit :</label>
+            <select id="produit" name="produit" required>
+                <option value="">Choisir un produit</option>
+                <option value="croissant">Croissant</option>
+                <option value="pain">Baguette</option>
+                <option value="tranche">Tranche de gâteau</option>
+                <option value="gateau-anniversaire">Gâteau d'anniversaire</option>
+                <option value="gateau-mariage">Gâteau de mariage</option>
+            </select>
+
+            <br><br>
+
+            <label for="quantite">Quantité :</label>
+            <input type="number" id="quantite" name="quantite"
+                   min="1" value="1" required>
+
+            <br><br>
+
+            <label for="date">Date de réception :</label>
+            <input type="date" id="date" name="date" required>
+
+            <br><br>
+
+            <h2>Personnalisation du gâteau</h2>
+
+            <label for="texte">Texte à écrire sur le gâteau :</label>
+            <input type="text" id="texte" name="texte"
+                   placeholder="Exemple : Joyeux anniversaire Sara">
+
+            <br><br>
+
+            <label for="decoration">Forme et décoration souhaitées :</label>
+            <textarea id="decoration" name="decoration" rows="4"
+                      placeholder="Couleurs, forme et décoration..."></textarea>
+
+            <br><br>
+
+            <h2>Mode de paiement</h2>
+
+            <label for="paiement">Choisissez un mode de paiement :</label>
+            <select id="paiement" name="paiement" required>
+                <option value="">Choisir un mode de paiement</option>
+                <option value="especes">Espèces</option>
+                <option value="virement">Virement bancaire</option>
+            </select>
+
+            <br><br>
+
+            <label for="commentaire">Commentaire supplémentaire :</label>
+            <textarea id="commentaire" name="commentaire" rows="4"
+                      placeholder="Votre commentaire..."></textarea>
+
+            <br><br>
+
+            <button type="submit">Envoyer la commande</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet House - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
